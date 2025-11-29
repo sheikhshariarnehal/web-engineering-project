@@ -2,15 +2,40 @@
 
 ## 📁 File Structure
 ```
-Index.html          - Main homepage
-login.html          - Login page
-register.html       - Registration page
-assets/
-  css/
-    style.css       - All styling
-    forms.css       - Form styling
-  js/
-    script.js       - Mobile menu JavaScript
+DiuGym/
+│
+├── assets/                 # CSS, JS, Images (Existing)
+│   ├── css/
+│   ├── js/
+│   └── image/
+│
+├── backend/                # PHP Processing Logic
+│   ├── connection.php      # Database connection (Existing)
+│   ├── register_user.php   # Handles registration logic
+│   ├── login_user.php      # Handles login & session creation
+│   ├── logout.php          # Destroys session
+│   ├── admin_controller.php# Logic for admin actions (delete user, add trainer)
+│   └── user_controller.php # Logic for user profile updates
+│
+├── dashboards/             # PROTECTED PAGES
+│   ├── admin/
+│   │   ├── index.php       # Main Admin Dashboard (Stats)
+│   │   ├── members.php     # Manage Members table
+│   │   └── trainers.php    # Manage Trainers form
+│   │
+│   └── user/
+│       ├── index.php       # Main User Dashboard (Status)
+│       └── profile.php     # Edit Profile
+│
+├── includes/               # Reusable HTML snippets (Header, Footer, Sidebar)
+│   ├── header.php
+│   ├── footer.php
+│   └── admin_sidebar.php
+│
+├── database_setup.sql      # SQL file
+├── index.html              # Landing Page (Existing)
+├── login.html              # Login Page (Existing)
+└── register.html           # Register Page (Existing)
 ```
 
 ## 🎯 Understanding Index.html
